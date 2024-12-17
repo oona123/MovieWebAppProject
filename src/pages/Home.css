@@ -1,0 +1,106 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+#home-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.event-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    height: 400px;
+}
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.event-card h6 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+.event-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.event-image {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#home-container.slick-prev, 
+#home-container.slick-next {
+    z-index: 2;
+    color: black; /* Style arrows */
+}
+#home-container .slick-prev::before, 
+#home-container .slick-next::before {
+    font-size: 24px;
+    color: black;
+}
+
+/* Specific styles for the reviews slider */
+.review-slider .slick-prev,
+.review-slider .slick-next {
+    z-index: 2;
+    color: black;
+}
+
+.review-slider .slick-prev::before, 
+.review-slider .slick-next::before {
+    font-size: 24px;
+    color: black;
+}
+.review-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+    height: 400px;
+}
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.review-movie-link {
+    color:#333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.review-movie-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.review-movie-link:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+.review-title {
+    margin-top: 20px;
+}
+.review-card p {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    
+}

@@ -1,0 +1,92 @@
+#auth-container {
+  max-width: 350px;
+  padding: 16px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+#auth-container h3 {
+  color: #ff6f61;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600
+}
+
+/* Success message styles */
+.success-message {
+  color: #18b43c;
+  padding: 10px;
+  text-align: center;
+}
+
+#auth-container label {
+  font-weight: 600;
+  display: block; 
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+#auth-container input[type="email"],
+#auth-container input[type="text"],
+#auth-container input[type="password"] {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#auth-container input[type="email"]:focus,
+#auth-container input[type="text"]:focus,
+#auth-container input[type="password"]:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+#auth-container input[type="password"] {
+  margin-bottom: 2px;
+} 
+
+.password-info {
+  font-size: 11px !important;
+  color: #888;
+  font-weight: normal;
+}
+
+/* Submit button styles */
+#auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#auth-container button:hover {
+  background-color: #e46257;
+}
+
+/* Link styles */
+#auth-container a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #ff6f61;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+#auth-container a:hover {
+  color: #ff6f61;
+  text-decoration: underline;
+}

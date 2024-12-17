@@ -1,0 +1,108 @@
+/*Root container styles*/
+.showtimes-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    color: #000;
+}
+.inputs-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.date-input, .area-select {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #000;
+    width: 200px;
+}
+/*Title*/
+.showtimes-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+/*Showtime list*/
+.showtimes-ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+/*Showtime card*/
+.showtime-card {
+    display: flex;
+    margin-bottom: 1.5rem;
+    background-color: lightgrey;
+    padding: 1rem;
+    border-radius: 8px;
+}
+/*Image container*/
+.showtime-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+/*Showtime details*/
+.showtime-details {
+    flex-grow: 1;
+}
+/*Showtime title*/
+.showtime-title {
+    color: #000;
+    margin: 0;
+}
+/*Theatre names*/
+.showtime-theatre {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+/*Start time*/
+.showtime-time {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+/*No showtimes message*/
+.no-showtimes {
+    text-align: center;
+    color: #000;
+}
+/*Clear all button*/
+.clear-button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff6f61;
+    color: #000;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    height: 100%;
+}
+.clear-button:hover {
+    background-color: #ff6f61;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 500px) {
+.date-input {
+    width: 40%;
+}
+
+.area-select {
+    width: 80%;
+}
+
+ .showtime-card {
+    width: 90%;
+} 
+
+}
